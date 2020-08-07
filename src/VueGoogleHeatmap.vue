@@ -36,7 +36,19 @@ export default {
     height: {
       type: [String, Number],
       default: () => '100%'
-    }
+    },
+     opacity: {
+      type: Number,
+      default: () => 1
+    },
+     maxIntensity: {
+      type: Number,
+      default: () => 1
+    },
+     radius: {
+      type: Number,
+      default: () => 1
+    },
   },
   computed: {
     mapWidth() {
@@ -72,9 +84,9 @@ export default {
       this.$heatmap = new google.maps.visualization.HeatmapLayer({
         data: this.heatmapPoints,
         map: this.$mapObject,
-        opacity: 1,
-        maxIntensity: 10,
-        radius: 5,
+        opacity: this.opacity,
+        maxIntensity: this.maxIntensity,
+        radius: this.radius,
       });
 
       this.$heatmap.setMap(this.$mapObject);
