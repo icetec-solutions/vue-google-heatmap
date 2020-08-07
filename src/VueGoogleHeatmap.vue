@@ -71,7 +71,10 @@ export default {
 
       this.$heatmap = new google.maps.visualization.HeatmapLayer({
         data: this.heatmapPoints,
-        map: this.$mapObject
+        map: this.$mapObject,
+        opacity: 1,
+        maxIntensity: 10,
+        radius: 5,
       });
 
       this.$heatmap.setMap(this.$mapObject);
