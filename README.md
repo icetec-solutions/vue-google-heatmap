@@ -58,3 +58,7 @@ export default {
 | lat | Number | 37.775 | Map center latitude |
 | lng | Number | -122.434 | Map center longitude |
 | points | Array | [] | Points to generate Heatmap with, array of objects [{lat: 37.775, lng: -122.434}] |
+| opacity | Number | 1 | The opacity of the heatmap, expressed as a number between 0 and 1 |
+| maxIntensity | Number | 10 | The maximum intensity of the heatmap |
+| radius | Number | 5 | The radius of influence for each data point, in pixels |
+
