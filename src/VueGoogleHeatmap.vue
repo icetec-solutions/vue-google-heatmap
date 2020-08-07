@@ -39,15 +39,15 @@ export default {
     },
      opacity: {
       type: Number,
-      default: () => 1
+      default: () => 0.6
     },
      maxIntensity: {
       type: Number,
-      default: () => 1
+      default: () => 10
     },
      radius: {
       type: Number,
-      default: () => 1
+      default: () => 5
     },
   },
   computed: {
